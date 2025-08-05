@@ -1,0 +1,22 @@
+# Node modules (both frontend and backend)
+my-app/node_modules/
+Server/node_modules/
+
+# Build output
+my-app/build/
+Server/build/
+
+# Environment variables
+.env
+my-app/.env
+Server/.env
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS/system files
+.DS_Store
+Thumbs.db

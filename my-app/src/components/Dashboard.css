@@ -1,0 +1,241 @@
+/* Main dashboard layout */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  width: 1500px;
+  background-color: #f4f4f4;
+}
+
+/* Header styling */
+.dashboard-header {
+  background-color: #6EACDA;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+}
+
+.logout-button {
+  background-color: #f44336;
+  border: none;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  width:  100px;
+}
+
+/* Sidebar styling */
+.dashboard-content {
+  display: flex;
+  flex: 1;
+}
+
+.dashboard-sidebar {
+  width: 250px;
+  background-color: gray;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-sidebar button {
+  background-color: #F4DF4EFF;
+  border: none;
+  padding: 15px;
+  margin-bottom: 10px;
+  color: black;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.dashboard-sidebar button:hover {
+  background-color: #21a1f1;
+}
+
+/* Main content styling */
+.dashboard-main {
+  flex: 1;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+}
+
+/* Center dashboard header text */
+.dashboard-header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Table container for student/faculty lists */
+.dashboard-main {
+  padding: 20px;
+  background-color: #FEF3E2;
+  display: flex;
+  justify-content: flex-start; /* Align to the top left */
+  align-items: flex-start; /* Align items to the top */
+}
+
+/* Table styling */
+table {
+  width: 90%; /* Increased table width */
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  margin-left: 20px; /* Slight left padding for alignment */
+  font-size: 18px; /* Increased font size for bigger appearance */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 15px; /* Increased padding for a larger feel */
+  text-align: left;
+}
+
+th {
+  background-color: #185519;
+  color: white;
+  font-weight: bold;
+  font-size: 20px; /* Larger font for headers */
+}
+
+td {
+  background-color: #f9f9f9;
+}
+
+/* Hover effect for rows */
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive adjustments for the table */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px; /* Reduced font size for smaller screens */
+    width: 100%;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+}
+
+/* Styled buttons */
+button {
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Error and success messages */
+.error-message, .success-message {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.error-message {
+  color: red;
+}
+
+.success-message {
+  color: green;
+}
+
+/* Card-like form container */
+.form-container {
+  background-color: #FFDFD6;
+  padding: 30px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+/* Underlined input fields */
+input {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 20px;
+  outline: none;
+
+}
+
+input:focus {
+  border-bottom: 2px solid #4CAF50;
+}
+
+/* Form header with styling */
+.form-container .dashboard-header {
+  background-color: #FEF3E2;
+}
+
+/* Form main content */
+.form-container .dashboard-main {
+  background-color: #FEF3E2;
+}
+
+label{
+  font-size: 25px;
+}
+
+h1{
+  font-size: 30px;
+}
+
+.feedback-textarea {
+  width: 90%;           /* Make the textarea take full width */
+  height: 200px;        /* Set a larger height */
+  padding: 10px;        /* Add some padding */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 4px;   /* Round the corners */
+  resize: none;         /* Disable resizing */
+  font-size: larger;
+}
+/* Style for the subject dropdown */
+.subject-dropdown {
+  width: 100%; /* Full width */
+  padding: 12px; /* Increase padding for a bigger feel */
+  font-size: 16px; /* Increase font size */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 4px; /* Rounded corners */
+  margin-top: 8px; /* Add some spacing */
+  background-color: #f9f9f9; /* Light background color */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Hover effect for the dropdown */
+.subject-dropdown:hover {
+  border-color: #888; /* Darker border on hover */
+}
+
+/* Focus effect for the dropdown */
+.subject-dropdown:focus {
+  outline: none; /* Remove default outline */
+  border-color: #007bff; /* Highlight border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a glow effect */
+}

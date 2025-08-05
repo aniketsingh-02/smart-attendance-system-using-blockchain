@@ -1,0 +1,208 @@
+/* Base App styling */
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+/* Header */
+.App-header {
+  background-color: #282c34;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Logo animation */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 10s linear;
+  }
+}
+
+/* Links */
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.App-link:hover {
+  color: #21a1f1;
+  text-decoration: underline;
+}
+
+/* Form styling */
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Input styling */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #61dafb;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #21a1f1;
+}
+
+/* Footer for additional styling */
+.App-footer {
+  margin-top: auto;
+  padding: 10px;
+  background-color: #282c34;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(8px + 2vmin);
+  }
+
+  form {
+    width: 95%;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+
+/* Login Container */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.login-options {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.login-box {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 500px;
+  height: 100px;
+}
+
+.login-box h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.login-box button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #61dafb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.login-box button:hover {
+  background-color: #21a1f1;
+}
+
+.login-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Password Field and Toggle Button */
+.password-field {
+  position: relative;
+  width: 100%;
+}
+
+.password-field input {
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px; /* Space for the toggle button */
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.password-toggle {
+  position: absolute;
+  right:10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: #61dafb;
+  cursor: pointer;
+  font-size: 20px; 
+  width: 4px;
+}
+
+.password-toggle:hover, .password-toggle:focus {
+  box-shadow: none !important; /* Completely prevent shadow on hover and focus */
+  outline: none;               /* Prevent any focus outline */
+  background: transparent;      /* Ensure background stays transparent */
+}
