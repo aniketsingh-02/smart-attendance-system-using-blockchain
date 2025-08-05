@@ -79,8 +79,8 @@ Enhanced UI/UX
 
 Notifications via Email/SMS
 
-🧑‍💻 Author
-Aniket Singh
-🔗 GitHub
+🧑‍💻 Author  
+[Aniket Singh](https://github.com/aniketsingh-02)
+
 
 
