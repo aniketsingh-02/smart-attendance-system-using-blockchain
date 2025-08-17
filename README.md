@@ -22,8 +22,9 @@ A decentralized, tamper-proof attendance tracking system built with **React**, *
 |---------------|--------------|
 |  Frontend   | React, Web3.js |
 |  Backend    | Node.js, Express.js |
+|  Database   | MongoDB
 |  Blockchain | Ethereum, Solidity, Truffle |
-|  Others     | Ganache, Metamask, IPFS (optional), MongoDB (if used) |
+|  Others     | Ganache, Metamask, MongoDB|
 
 ---
 
@@ -52,31 +53,35 @@ Major2/
 
 ---
 
-### 📦 Backend (Server)
+### | Steps to run the Smart Attendance system
+Download the zip file of project and follow the given steps
+👇👇
+```Run these commands into your terminal
+In first terminal
 
-```bash
+🛠️ Backend (Node.js/Express)
 cd Server
 npm install
 node server.js
 
+🔗 Smart Contracts
+truffle compile
+truffle migrate
+truffle migrate --reset  // if you want to Redeploy the smart contract
+
+In Second terminal
+
 🌐 Frontend (React App)
 cd my-app
 npm install
+npm install axios
 npm start
-
-🔗 Smart Contracts
-truffle compile
-truffle migrate --reset
 
 💡 Future Improvements
 Facial Recognition Integration
-
 IPFS for file storage
-
 Role-based access control
-
 Enhanced UI/UX
-
 Notifications via Email/SMS
 
 🧑‍💻 Author  
