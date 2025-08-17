@@ -22,9 +22,8 @@ A decentralized, tamper-proof attendance tracking system built with **React**, *
 |---------------|--------------|
 |  Frontend   | React, Web3.js |
 |  Backend    | Node.js, Express.js |
-|  Database   | MongoDB
-|  Blockchain | Ethereum, Solidity, Truffle |
-|  Others     | Ganache, Metamask, MongoDB|
+|  Database   | MongoDB |
+|  Blockchain | Ethereum, Solidity, Truffle, Ganache |
 
 ---
 
