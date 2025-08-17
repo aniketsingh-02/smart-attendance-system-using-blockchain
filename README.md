@@ -1,6 +1,6 @@
 # 🎓 Smart Attendance System using Blockchain
 
-A decentralized, tamper-proof attendance tracking system built with **React**, **Node.js**,**MongoDB** and **Ethereum (Solidity)**. This project ensures transparency, accuracy, and security in academic or corporate attendance management.
+A decentralized, tamper-proof attendance tracking system built with **React**, **Node.js**,**MongoDB** and **Ethereum (Solidity)**, **Ganache**. This project ensures transparency, accuracy, and security in academic or corporate attendance management.
 
 ---
 
@@ -45,10 +45,10 @@ Major2/
 ## ⚙️ Installation & Setup
 
 ### 🔧 Prerequisites
-
+Intall these first
 - Node.js & npm
-- Ganache
-- Truffle
+- Ganache (personal Ethereum blockchain)
+- Truffle (In your terminal)
 - Metamask (browser extension)
 
 ---
